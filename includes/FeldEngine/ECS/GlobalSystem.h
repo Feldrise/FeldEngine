@@ -36,7 +36,7 @@ namespace FECS
 		virtual bool addEntity(Entity e) override;
 		virtual bool removeEntity(Entity e) override;
 
-		virtual void updateEntity(float deltaTime, Entity e);
+		virtual void updateEntity(float deltaTime, Entity e) = 0;
 
 	protected:
 		const std::set<Entity> getEntities() const { return m_entities; }
