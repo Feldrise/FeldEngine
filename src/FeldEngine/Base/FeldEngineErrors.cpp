@@ -16,6 +16,4 @@ namespace Fd
 		SDL_Quit();
 		exit(69);
 	}
-
-	//Some other errors funtion will come
 }
