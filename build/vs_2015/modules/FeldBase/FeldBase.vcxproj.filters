@@ -27,5 +27,13 @@
     <ClInclude Include="..\..\..\..\includes\FeldEngine\Base\Math\Math.h">
       <Filter>Math</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\includes\FeldEngine\Base\FeldEngineErrors.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\FeldEngine\Base\FeldEngineErrors.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

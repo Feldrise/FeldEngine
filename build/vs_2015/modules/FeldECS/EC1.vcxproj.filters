@@ -50,13 +50,16 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\src\FeldEngine\Stock.cpp">
+    <ClCompile Include="..\..\..\..\src\FeldEngine\ECS\GlobalSystem.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\src\FeldEngine\World.cpp">
+    <ClCompile Include="..\..\..\..\src\FeldEngine\ECS\Stock.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\src\FeldEngine\GlobalSystem.cpp">
+    <ClCompile Include="..\..\..\..\src\FeldEngine\ECS\Type.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\FeldEngine\ECS\World.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>

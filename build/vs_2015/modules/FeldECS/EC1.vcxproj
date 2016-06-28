@@ -71,9 +71,11 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>$(SolutionDir)/;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\..\lib\msvc\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>$(SolutionDir)/;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\..\lib\msvc\$(Configuration)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -112,6 +114,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)/../../includes</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -152,9 +155,10 @@
     <ClInclude Include="..\..\..\..\includes\FeldEngine\ECS\World.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\src\FeldEngine\GlobalSystem.cpp" />
-    <ClCompile Include="..\..\..\..\src\FeldEngine\Stock.cpp" />
-    <ClCompile Include="..\..\..\..\src\FeldEngine\World.cpp" />
+    <ClCompile Include="..\..\..\..\src\FeldEngine\ECS\GlobalSystem.cpp" />
+    <ClCompile Include="..\..\..\..\src\FeldEngine\ECS\Stock.cpp" />
+    <ClCompile Include="..\..\..\..\src\FeldEngine\ECS\Type.cpp" />
+    <ClCompile Include="..\..\..\..\src\FeldEngine\ECS\World.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
