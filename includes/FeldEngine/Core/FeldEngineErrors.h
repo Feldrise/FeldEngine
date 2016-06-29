@@ -4,5 +4,5 @@
 
 namespace Fd
 {
-	extern void fatalError(std::string errorString);
+	extern void fatalError(std::string const& errorString);
 }
