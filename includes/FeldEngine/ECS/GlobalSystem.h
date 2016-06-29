@@ -39,7 +39,7 @@ namespace FECS
 		virtual void updateEntity(float deltaTime, Entity e) = 0;
 
 	protected:
-		const std::set<Entity> getEntities() const { return m_entities; }
+		const std::set<Entity>& getEntities() const { return m_entities; }
 
 	private:
 		std::set<Entity> m_entities{};
