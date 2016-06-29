@@ -1,4 +1,4 @@
-Samy: for(auto stock: m_stock) je crois que auto crée un objet, c'est préférable de mettre auto&, auto const& ou auto&&
+Samy: for(auto stock: m_stock) je crois que auto crÃ©e un objet, c'est prÃ©fÃ©rable de mettre auto&, auto const& ou auto&&
 
 Samy: bool World::destroyEntity(Entity e) pas Entity& e ?
 
@@ -17,14 +17,12 @@ Samy: dans std::set<Entity> World::getEntities() const
       return std::move(retour);
       }
 
-Samy: Dans updateSystem(), j'ai pas compris pourquoi faire 3 boucles différentes.
+Samy: Dans updateSystem(), j'ai pas compris pourquoi faire 3 boucles diffÃ©rentes.
 
 Samy: if (stock == nullptr)
       return nullptr;
 
       return stock->get(e);
       = return (stock)?stock->get(e):nullptr;
-
-Samy: t'en veux encore ? x)
 
 Samy: GlobalSystem::updateEntity met la virtuelle pure
