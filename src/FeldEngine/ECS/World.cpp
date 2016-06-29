@@ -32,14 +32,15 @@ namespace FECS
 
 	World::~World()
 	{
-		for (auto stock : m_stocks) {
+		for (auto stock : m_stocks)
+		{
 			delete stock.second;
 		}
 	}
 
 	Entity World::createEntity()
 	{
-		Entity e{ ++m_next };
+		Entity e { ++m_next };
 		assert(e != INVALID_ENTITY);
 
 		auto retour{ m_entities.insert(std::make_pair(e, std::set<ComponentType>())) };
@@ -57,11 +58,12 @@ namespace FECS
 	{
 		std::set<Entity> retour{};
 
-		for (auto entity : m_entities) {
+		for (auto entity : m_entities)
+		{
 			retour.insert(entity.first);
 		}
 
-		return std::move(retour);
+		return retour;
 	}
 
 	Stock * World::getStock(ComponentType ct)
@@ -210,7 +212,7 @@ namespace FECS
 			if (handler(origin, type, evnt) == EventStatus::KEEP)
 				kept.push_back(handler);
 		}
-	std::swap(it->second, kept);
+		std::swap(it->second, kept);
 	}
 
 
