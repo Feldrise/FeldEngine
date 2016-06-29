@@ -171,18 +171,14 @@ namespace FECS
 
 	void World::updateSystems(float deltaTime)
 	{
-		for (auto& sys : m_systems) {
+		for (auto& sys : m_systems)
 			sys->preUpdate(deltaTime);
-		}
-
-		for (auto& sys : m_systems) {
+			
+		for (auto& sys : m_systems) 
 			sys->update(deltaTime);
-		}
-
-		for (auto& sys : m_systems) {
+			
+		for (auto& sys : m_systems) 
 			sys->postUpdate(deltaTime);
-		}
-
 	}
 
 	void World::registerHandler(EventType type, EventHandler handler)
