@@ -21,18 +21,18 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\includes\FeldEngine\Base\Config.h">
+    <ClInclude Include="..\..\..\..\includes\FeldEngine\Core\Config.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\includes\FeldEngine\Base\Math\Math.h">
+    <ClInclude Include="..\..\..\..\includes\FeldEngine\Core\FeldEngineErrors.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\includes\FeldEngine\Core\Math\Math.h">
       <Filter>Math</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\includes\FeldEngine\Base\FeldEngineErrors.h">
-      <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\src\FeldEngine\Base\FeldEngineErrors.cpp">
+    <ClCompile Include="..\..\..\..\src\FeldEngine\Core\FeldEngineErrors.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>

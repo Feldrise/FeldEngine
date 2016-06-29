@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{049F37A1-B141-4B39-8582-CD871DB03BFE}</ProjectGuid>
+    <ProjectGuid>{7FAFE5E1-123A-4F38-AA2D-B95EC0D25E99}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>FeldBase</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
@@ -71,6 +71,10 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <OutDir>$(SolutionDir)..\..\lib\msvc\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)..\..\lib\msvc\$(Configuration)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -146,12 +150,12 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\includes\FeldEngine\Base\Config.h" />
-    <ClInclude Include="..\..\..\..\includes\FeldEngine\Base\FeldEngineErrors.h" />
-    <ClInclude Include="..\..\..\..\includes\FeldEngine\Base\Math\Math.h" />
+    <ClInclude Include="..\..\..\..\includes\FeldEngine\Core\Config.h" />
+    <ClInclude Include="..\..\..\..\includes\FeldEngine\Core\FeldEngineErrors.h" />
+    <ClInclude Include="..\..\..\..\includes\FeldEngine\Core\Math\Math.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\src\FeldEngine\Base\FeldEngineErrors.cpp" />
+    <ClCompile Include="..\..\..\..\src\FeldEngine\Core\FeldEngineErrors.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

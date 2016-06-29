@@ -157,7 +157,6 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\..\src\FeldEngine\ECS\GlobalSystem.cpp" />
     <ClCompile Include="..\..\..\..\src\FeldEngine\ECS\Stock.cpp" />
-    <ClCompile Include="..\..\..\..\src\FeldEngine\ECS\Type.cpp" />
     <ClCompile Include="..\..\..\..\src\FeldEngine\ECS\World.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
