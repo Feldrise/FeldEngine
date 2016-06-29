@@ -42,7 +42,7 @@ bool FECS::GlobalSystem::removeEntity(Entity e)
 	return retour > 0;
 }
 
-void FECS::GlobalSystem::updateEntity(float deltaTime, Entity e)
+/*void FECS::GlobalSystem::updateEntity(float deltaTime, Entity e) //pure virtual
 {
 	// Empty by default
-}
+}*/
